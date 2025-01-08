@@ -24,14 +24,15 @@ public class QuickSort {
 			while(arr[e]>pivot) {
 				e--;
 			}
-		}
-		if(s<=e) {
+			if(s<=e) {
 			int temp=arr[s];
 			arr[s]=arr[e];
 			arr[e]=temp;
 			s++;
 			e--;
 		}
+		}
+		
 		quicksort(arr,low,e);
 		quicksort(arr,s,high);
 	}
